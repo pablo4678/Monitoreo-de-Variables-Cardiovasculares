@@ -280,6 +280,7 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 > ⚠️ El procedimiento indica 150 bpm; el OxSim fue configurado a 140 bpm durante la práctica.
 
 **Configuración del OxSim:** SpO₂ = 98 %, FC = 140 bpm, PI ≈ 2.0 %
+<img width="731" height="385" alt="image" src="https://github.com/user-attachments/assets/198908a7-718c-4959-b8d7-701cfe7b47ec" />
 
 | Tiempo [s] | FC simulada [bpm] | FC medida [bpm] | Error absoluto FC | Error % FC | SpO₂ simulada [%] | SpO₂ medida [%] | Error absoluto SpO₂ | Error % SpO₂ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
