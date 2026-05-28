@@ -11,17 +11,17 @@
 - [Revisión Bibliográfica](#revisión-bibliográfica)
   - [Modo Monitor en el BeneHeart D30](#modo-monitor-en-el-beneheart-d30)
   - [Parámetros simulables con el OxSim OX-1](#parámetros-simulables-con-el-oxsim-ox-1)
-  - [Errores máximos permitidos (EMP) en contexto clínico](#c-errores-máximos-permitidos-emp-en-contexto-clínico)
-  - [Preguntas para la discusión](#d-preguntas-para-la-discusión)
+  - [Errores máximos permitidos (EMP) en contexto clínico](#errores-máximos-permitidos-emp-en-contexto-clínico)
+  - [Preguntas para la discusión](#preguntas-para-la-discusión)
 - [Procedimiento Experimental y Resultados](#procedimiento-experimental-y-resultados)
   - [Tabla de verificación de alarmas](#tabla-de-verificación-de-alarmas)
   - [Punto 4 — Paciente bradicárdico (40 bpm, SpO₂ = 95%)](#punto-4--paciente-bradicárdico-40-bpm-spo₂--95)
-  - [Punto 7 — Alarma límite inferior SpO₂ = 85%](#punto-7--alarma-límite-inferior-spo₂--85)
-  - [Punto 9 — Alarma límite superior SpO₂ = 99%](#punto-9--alarma-límite-superior-spo₂--99)
-  - [Punto 10 — Modo Low Perfusion](#punto-10--modo-low-perfusion)
-  - [Punto 11 — Taquicardia (150 bpm, SpO₂ = 95%)](#punto-11--taquicardia-150-bpm-spo₂--95)
-  - Análisis de resultados
-  - Conclusiones 
+  - [Alarma límite inferior SpO₂ = 85%](#alarma-límite-inferior-spo₂--85)
+  - [Alarma límite superior SpO₂ = 99%](#alarma-límite-superior-spo₂--99)
+  - [Modo Low Perfusion](#modo-low-perfusion)
+  - [Taquicardia (140 bpm, SpO₂ = 98%)](#taquicardia-140-bpm-spo₂--98)
+  - [Análisis de resultados](#análisis-de-resultados)
+  - [Conclusiones](#conclusiones)
 - [Referencias](#referencias)
 
 ---
@@ -134,8 +134,6 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 ---
 
 ## Procedimiento Experimental y Resultados
-
-> **Instrucciones:** Complete cada celda con los valores registrados durante la práctica. Los campos marcados con `___` deben ser llenados con los datos experimentales obtenidos.
 
 ---
 
