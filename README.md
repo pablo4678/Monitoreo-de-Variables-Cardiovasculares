@@ -20,8 +20,8 @@
   - [Punto 9 — Alarma límite superior SpO₂ = 99%](#punto-9--alarma-límite-superior-spo₂--99)
   - [Punto 10 — Modo Low Perfusion](#punto-10--modo-low-perfusion)
   - [Punto 11 — Taquicardia (150 bpm, SpO₂ = 95%)](#punto-11--taquicardia-150-bpm-spo₂--95)
-  - [Análisis de resultados]
-  - [Conclusiones]
+  - Análisis de resultados
+  - Conclusiones 
 - [Referencias](#referencias)
 
 ---
@@ -140,7 +140,6 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 ---
 
 ### Tabla de verificación de alarmas
-*(Puntos 6, 7, 8, 9 y 11 del procedimiento)*
 
 | # | Parámetro | Límite configurado | Tipo (Alto / Bajo) | Valor simulado (OxSim) | Valor mostrado en D30 | ¿Alarma activa? | Tiempo de respuesta (s) |
 |:---:|---|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -179,7 +178,7 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 ---
 
-### Punto 7 — Alarma límite inferior SpO₂ = 85%
+### Alarma límite inferior SpO₂ = 85%
 **Configuración:** Límite inferior de SpO₂ en D30 = 90 % | OxSim: SpO₂ = 85 %, FC = 80 bpm
 <img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/ae14bba8-284a-40ed-8894-0ee03b8d020d" />
 
@@ -216,7 +215,7 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 ---
 
-### Punto 9 — Alarma límite superior SpO₂ = 99%
+### Alarma límite superior SpO₂ = 99%
 **Configuración:** Límite superior de SpO₂ en D30 = 97 % | OxSim: SpO₂ = 99 %, FC = 80 bpm
 <img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/8e5c8c33-1ed0-41c2-ab4d-b728bb2d79af" />
 
@@ -252,7 +251,7 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 ---
 
-### Punto 10 — Modo Low Perfusion
+### Modo Low Perfusion
 
 **Configuración del OxSim:** Modo Low Perfusion → SpO₂ = 99 %, FC = 80 bpm, PI ≈ 0.2 %
 <img width="783" height="438" alt="image" src="https://github.com/user-attachments/assets/0a2951c7-0ad0-4b64-a9b7-4f10f333d98a" />
@@ -276,9 +275,7 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 ---
 
-### Punto 11 — Taquicardia (140 bpm, SpO₂ = 98%)
-
-> ⚠️ El procedimiento indica 150 bpm; el OxSim fue configurado a 140 bpm durante la práctica.
+### Taquicardia (140 bpm, SpO₂ = 98%)
 
 **Configuración del OxSim:** SpO₂ = 98 %, FC = 140 bpm, PI ≈ 2.0 %
 
@@ -358,6 +355,7 @@ El sesgo sistemático de +1 % identificado en el rango de saturación alta (95�
 El experimento con el modo Low Perfusion evidenció que las condiciones de laboratorio con simulador representan el escenario más favorable posible para el equipo, y no replican fielmente la complejidad de la señal bajo vasoconstricción o hipotensión clínica real. Esto refuerza un principio fundamental de la ingeniería clínica: la evaluación con simulador certifica el desempeño del instrumento bajo condiciones ideales, pero no exime del entrenamiento del personal para interpretar señales de baja calidad ni de la implementación de protocolos clínicos alternativos (cambio de sitio de medición, uso de co-oximetría) cuando la señal periférica es insuficiente.
 
 Finalmente, el análisis de los tiempos de respuesta de alarma (18–42 s) subraya que el sistema de alarmas del D30 está diseñado con un balance entre sensibilidad y especificidad: ventanas de confirmación más largas para eventos potencialmente artefactuales reducen las falsas alarmas, pero también introducen latencias que pueden ser clínicamente significativas ante deterioro agudo real. Este balance debe ser comprendido y considerado por el personal clínico al configurar los parámetros de alarma del equipo.s
+
 ---
 ## Referencias
 
