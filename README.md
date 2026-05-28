@@ -8,12 +8,12 @@
 
 ## Tabla de Contenidos
 
-- [Parte A — Revisión Bibliográfica](#parte-a--revisión-bibliográfica)
-  - [a. Modo Monitor en el BeneHeart D30](#a-modo-monitor-en-el-beneheart-d30)
-  - [b. Parámetros simulables con el OxSim OX-1](#b-parámetros-simulables-con-el-oxsim-ox-1)
-  - [c. Errores máximos permitidos (EMP) en contexto clínico](#c-errores-máximos-permitidos-emp-en-contexto-clínico)
-  - [d. Preguntas para la discusión](#d-preguntas-para-la-discusión)
-- [Parte B — Procedimiento Experimental y Resultados](#parte-b--procedimiento-experimental-y-resultados)
+- [Revisión Bibliográfica](#revisión-bibliográfica)
+  - [Modo Monitor en el BeneHeart D30](#modo-monitor-en-el-beneheart-d30)
+  - [Parámetros simulables con el OxSim OX-1](#parámetros-simulables-con-el-oxsim-ox-1)
+  - [Errores máximos permitidos (EMP) en contexto clínico](#c-errores-máximos-permitidos-emp-en-contexto-clínico)
+  - [Preguntas para la discusión](#d-preguntas-para-la-discusión)
+- [Procedimiento Experimental y Resultados](#procedimiento-experimental-y-resultados)
   - [Tabla de verificación de alarmas](#tabla-de-verificación-de-alarmas)
   - [Punto 4 — Paciente bradicárdico (40 bpm, SpO₂ = 95%)](#punto-4--paciente-bradicárdico-40-bpm-spo₂--95)
   - [Punto 7 — Alarma límite inferior SpO₂ = 85%](#punto-7--alarma-límite-inferior-spo₂--85)
@@ -133,7 +133,7 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 ---
 
-## Parte B — Procedimiento Experimental y Resultados
+## Procedimiento Experimental y Resultados
 
 > **Instrucciones:** Complete cada celda con los valores registrados durante la práctica. Los campos marcados con `___` deben ser llenados con los datos experimentales obtenidos.
 
