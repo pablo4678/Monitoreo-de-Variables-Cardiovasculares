@@ -310,7 +310,11 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 > de estimación ante frecuencias cardíacas elevadas, aunque dentro del margen 
 > clínicamente aceptable.
 > ___________________________________________________________________________
-
+---
+## Analisís de resultados
+---
+## Conclusiones
+---
 ## Referencias
 
 [1] Mindray Bio-Medical Electronics Co., Ltd., *BeneHeart D30/BeneHeart D20A/BeneHeart D20/BeneHeart D20C Defibrillator/Monitor Instructions for Use*, Rev. 1.0. Shenzhen, China: Mindray, Jun. 2022. [En línea]. Disponible en: https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/d6-cpr-sensor-mdr/H-046-024584-00-BeneHeart-D30-D20-Instructions-for-Use-1.0.pdf
