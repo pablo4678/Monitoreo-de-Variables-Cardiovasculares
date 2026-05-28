@@ -20,13 +20,15 @@
   - [Punto 9 — Alarma límite superior SpO₂ = 99%](#punto-9--alarma-límite-superior-spo₂--99)
   - [Punto 10 — Modo Low Perfusion](#punto-10--modo-low-perfusion)
   - [Punto 11 — Taquicardia (150 bpm, SpO₂ = 95%)](#punto-11--taquicardia-150-bpm-spo₂--95)
+  - [Análisis de resultados]
+  - [Conclusiones]
 - [Referencias](#referencias)
 
 ---
 
-## Parte A — Revisión Bibliográfica
+##  Revisión Bibliográfica
 
-### a. Modo Monitor en el BeneHeart D30
+###  Modo Monitor en el BeneHeart D30
 
 El BeneHeart D30 (Mindray) es un desfibrilador/monitor multiparamétrico que dispone de cuatro modos de operación principales accesibles mediante su perilla (*Mode Select knob*) ubicada en el panel frontal del equipo: **Monitor**, Desfibrilación Manual, DEA (*AED*) y Marcapasos (*Pacer*) [1].
 
@@ -42,7 +44,7 @@ El BeneHeart D30 (Mindray) es un desfibrilador/monitor multiparamétrico que dis
 
 ---
 
-### b. Parámetros simulables con el OxSim OX-1
+### Parámetros simulables con el OxSim OX-1
 
 El Pronk OxSim OX-1 es un simulador óptico de oximetría de pulso de tamaño de bolsillo que replica la señal fotopletismográfica de un dedo mediante tecnología óptica, eliminando la necesidad de adaptadores de cable propietarios gracias a la detección automática del tipo de sensor (*auto-detection*) [3], [4]. Opera con una sola batería AA y ofrece hasta 8–12 horas de simulación continua [4].
 
@@ -79,7 +81,7 @@ Es la relación entre la componente pulsátil (AC) y la componente continua (DC)
 
 ---
 
-### c. Errores máximos permitidos (EMP) en contexto clínico
+### Errores máximos permitidos (EMP) en contexto clínico
 
 Las tolerancias clínicamente aceptables para los parámetros medidos por oximetría de pulso están definidas por estándares internacionales y por las especificaciones técnicas del monitor bajo prueba.
 
@@ -107,7 +109,7 @@ No existe un EMP estandarizado internacionalmente para el PI de forma independie
 
 ---
 
-### d. Preguntas para la discusión
+### Preguntas para la discusión
 
 #### Pregunta 1: ¿Cuál es el principio de operación del Pronk OxSim OX-1 para simular una onda pulsátil?
 
