@@ -318,8 +318,46 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 > ___________________________________________________________________________
 ---
 ## Análisis de resultados
+
+### Exactitud de SpO₂
+
+En todos los modos de simulación los errores de SpO₂ se mantuvieron dentro del EMP del fabricante (±2 %) y muy por debajo del límite normativo ISO 80601-2-61 (Arms ≤ 4 %). El patrón más notable es un **sesgo sistemático positivo de +1 %** observado consistentemente en las mediciones de saturación alta (modos 95 % y 99 %, Puntos 4, 9 y 11). Este sesgo, que se repite con desviación estándar nula o mínima, no es ruido aleatorio sino un comportamiento determinístico del algoritmo del D30: en el extremo superior de la escala (SpO₂ ≥ 95 %), la curva de calibración empírica del monitor tiende a sobreestimar la saturación en 1 punto porcentual respecto a la señal del OxSim. Desde el punto de vista clínico este sesgo es irrelevante (el paciente estaría siendo reportado como ligeramente mejor oxigenado de lo real, lo cual es el escenario de menor riesgo en rangos ya normales), pero lo convierte en un dato de interés metrológico para el departamento de ingeniería clínica.
+
+En cambio, cuando el OxSim simuló 85 % (Punto 7), el D30 reprodujo el valor exacto sin error. Esto tiene sentido: en el rango hipoxémico la presión clínica por exactitud es mayor y los algoritmos de oximetría están más finamente calibrados para ese tramo, dado que es allí donde las decisiones terapéuticas son más críticas.
+
+El modo de taquicardia (Punto 11) introdujo una pequeña variabilidad temporal (error de 0 % en t = 10, 20, 50 s; error de 1 % en t = 30 y 40 s), con σ = 0,49 %. Esta inestabilidad transitoria —dentro del margen aceptable— sugiere que a 140 bpm el algoritmo de detección de picos experimenta mayor carga computacional por ciclo, lo cual puede generar fluctuaciones en la estimación del cociente R entre muestras sucesivas.
+
 ---
+
+### Exactitud de frecuencia cardíaca
+
+La frecuencia cardíaca fue medida sin error en todos los puntos (MAE = 0 bpm, σ = 0 en todos los modos). Esto indica que el módulo de detección pulsátil del D30 opera con precisión perfecta sobre señales sintéticas limpias del OxSim —en ausencia de movimiento y artefactos— a lo largo de todo el rango evaluado (40–140 bpm). Los resultados confirman que el equipo cumple holgadamente el EMP de ±3 bpm especificado por el fabricante. Es importante contextualizar este hallazgo: las condiciones de laboratorio con simulador son las más favorables posibles (señal óptica estable, sin movimiento, sin interferencia ambiental), por lo que estos valores representan el límite superior del desempeño del equipo, no su desempeño clínico promedio.
+
+---
+
+### Comportamiento de las alarmas
+
+Los tres eventos de alarma verificados exhibieron diferencias significativas en el **tiempo de respuesta**: 42 s para la alarma de SpO₂ baja (85 %, umbral 90 %), 18 s para la alarma de SpO₂ alta (99 %, umbral 97 %) y 21 s para la alarma de FC elevada (140 bpm, umbral 100 bpm). Esta variabilidad no es aleatoria: refleja el comportamiento intencionado del sistema de alarmas del D30, que aplica ventanas de promediado y algoritmos de confirmación antes de activar la alerta para reducir las falsas alarmas por artefactos transitorios.
+
+El tiempo de 42 s en la alarma de SpO₂ baja es notablemente mayor. Una hipótesis plausible es que el D30 implementa confirmación más prolongada para las alarmas de hipoxemia severa (umbral < 90 %) precisamente para evitar falsas alarmas en condiciones de mala perfusión transitoria —como las descritas en la revisión bibliográfica—, a costa de una latencia mayor. En contexto clínico real, 42 s sería un tiempo inaceptablemente largo ante una desaturación aguda real, lo que subraya la importancia de ajustar correctamente los umbrales y de no depender exclusivamente de las alarmas automatizadas para la vigilancia del paciente, tal como lo advierte el fabricante en el manual del BeneHeart D30.
+
+---
+
+### Modo Low Perfusion
+
+El D30 mantuvo una lectura estable de 100 % con PI ≈ 0,2 %, sin mensajes de error ni pérdida de señal. Este resultado contrasta favorablemente con la literatura revisada, que advierte sobre lecturas erróneas o ausentes bajo baja perfusión en oxímetros convencionales. La explicación más probable es que el OxSim OX-1, al ser un simulador óptico activo con control electrónico preciso de la amplitud de la señal, genera una señal de baja perfusión más limpia y predecible que la que produce un paciente real en shock o vasoconstricción severa, donde el ruido de movimiento y la variabilidad tisular degradan aún más el cociente señal/ruido. El escenario experimental subestima, por tanto, la dificultad real de la medición en baja perfusión clínica. Aun así, la reducción visible en la amplitud de la onda PPG fue consistente con el PI declarado del simulador, lo cual valida cualitativamente la respuesta del canal óptico del monitor.
+
+---
+
 ## Conclusiones
+
+El BeneHeart D30 demostró un desempeño metrológico que cumple con los estándares clínicos vigentes (ISO 80601-2-61:2019) en todos los escenarios evaluados con el OxSim OX-1. La exactitud en la medición de frecuencia cardíaca fue perfecta bajo las condiciones controladas del laboratorio (MAE = 0 bpm en el rango 40–140 bpm), confirmando que el módulo PPG del equipo opera dentro de sus especificaciones técnicas declaradas. Los errores de SpO₂ se mantuvieron en ≤ 1 % en todos los modos, por debajo del límite de ±2 % del fabricante y muy alejados del límite normativo de ±4 % Arms.
+
+El sesgo sistemático de +1 % identificado en el rango de saturación alta (95–99 %) representa un hallazgo relevante desde la perspectiva del programa de mantenimiento preventivo y verificación del equipo: aunque clínicamente inocuo en ese rango, su consistencia y reproducibilidad lo identifican como una característica del algoritmo de estimación más que como ruido del sistema. Este tipo de análisis de sesgo sistemático es precisamente el objetivo de una prueba de verificación con simulador en ingeniería clínica.
+
+El experimento con el modo Low Perfusion evidenció que las condiciones de laboratorio con simulador representan el escenario más favorable posible para el equipo, y no replican fielmente la complejidad de la señal bajo vasoconstricción o hipotensión clínica real. Esto refuerza un principio fundamental de la ingeniería clínica: la evaluación con simulador certifica el desempeño del instrumento bajo condiciones ideales, pero no exime del entrenamiento del personal para interpretar señales de baja calidad ni de la implementación de protocolos clínicos alternativos (cambio de sitio de medición, uso de co-oximetría) cuando la señal periférica es insuficiente.
+
+Finalmente, el análisis de los tiempos de respuesta de alarma (18–42 s) subraya que el sistema de alarmas del D30 está diseñado con un balance entre sensibilidad y especificidad: ventanas de confirmación más largas para eventos potencialmente artefactuales reducen las falsas alarmas, pero también introducen latencias que pueden ser clínicamente significativas ante deterioro agudo real. Este balance debe ser comprendido y considerado por el personal clínico al configurar los parámetros de alarma del equipo.s
 ---
 ## Referencias
 
