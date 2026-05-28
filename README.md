@@ -144,8 +144,8 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 | # | Parámetro | Límite configurado | Tipo (Alto / Bajo) | Valor simulado (OxSim) | Valor mostrado en D30 | ¿Alarma activa? | Tiempo de respuesta (s) |
 |:---:|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | SpO₂ | 90 % | Bajo | 85 % | 85 % | Sí | 6 s |
-| 2 | SpO₂ | 97 % | Alto | 99 % | 100 % | Sí | 7 s |
+| 1 | SpO₂ | 90 % | Bajo | 85 % | 85 % | Sí | 16 s |
+| 2 | SpO₂ | 97 % | Alto | 99 % | 100 % | Sí | 12 s |
 | 3 | FC | ___ bpm | Alto | 140 bpm | 140 bpm | Sí / No | 11 s |
 
 ---
@@ -202,8 +202,8 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 | Tipo de alarma | ¿Se activó? | Tiempo desde configuración (s) | Descripción visual/sonora |
 |---|:---:|:---:|---|
-| Sonora | Sí | ___ s | ___________ |
-| Visual | Sí | ___ s | ___________ |
+| Sonora | Sí | 16 s | 
+| Visual | Sí | 16 s | 
 
 **Observaciones:**
 > Al establecer el límite inferior de SpO₂ en 90 % y simular 85 % con el OxSim, 
@@ -237,10 +237,10 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 **Registro de alarma:**
 
-| Tipo de alarma | ¿Se activó? | Tiempo desde configuración (s) | Descripción visual/sonora |
+| Tipo de alarma | ¿Se activó? | Tiempo desde configuración (s) | 
 |---|:---:|:---:|---|
-| Sonora | Sí | ___ s | ___________ |
-| Visual | Sí | ___ s | ___________ |
+| Sonora | Sí | 14 s | 
+| Visual | Sí | 14 s | 
 
 **Observaciones:**
 > Con el límite superior configurado en 97 % y el OxSim generando 99 %, el D30 
@@ -255,11 +255,12 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 ### Punto 10 — Modo Low Perfusion
 
 **Configuración del OxSim:** Modo Low Perfusion → SpO₂ = 99 %, FC = 80 bpm, PI ≈ 0.2 %
+<img width="783" height="438" alt="image" src="https://github.com/user-attachments/assets/0a2951c7-0ad0-4b64-a9b7-4f10f333d98a" />
 
 | Pregunta | Respuesta observada |
 |---|---|
-| ¿El D30 mantiene la lectura de SpO₂? | Sí / No / Intermitente |
-| ¿La onda PPG se distorsiona o desaparece? | Sí / No / Parcialmente |
+| ¿El D30 mantiene la lectura de SpO₂? | Sí |
+| ¿La onda PPG se distorsiona o desaparece?  No |
 | Valor de SpO₂ mostrado (si aplica) | 100 % |
 
 
