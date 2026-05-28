@@ -144,9 +144,9 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 | # | Parámetro | Límite configurado | Tipo (Alto / Bajo) | Valor simulado (OxSim) | Valor mostrado en D30 | ¿Alarma activa? | Tiempo de respuesta (s) |
 |:---:|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | SpO₂ | 90 % | Bajo | 85 % | 85 % | Sí | 16 s |
-| 2 | SpO₂ | 97 % | Alto | 99 % | 100 % | Sí | 12 s |
-| 3 | FC | ___ bpm | Alto | 140 bpm | 140 bpm | Sí / No | 11 s |
+| 1 | SpO₂ | 90 % | Bajo | 85 % | 85 % | Sí | 42 s |
+| 2 | SpO₂ | 97 % | Alto | 99 % | 100 % | Sí | 18 s |
+| 3 | FC | 100 bpm | Alto | 140 bpm | 140 bpm | Sí  | 21 s |
 
 ---
 
@@ -200,10 +200,10 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 **Registro de alarma:**
 
-| Tipo de alarma | ¿Se activó? | Tiempo desde configuración (s) | Descripción visual/sonora |
+| Tipo de alarma | ¿Se activó? | Tiempo desde configuración (s) | 
 |---|:---:|:---:|---|
-| Sonora | Sí | 16 s | 
-| Visual | Sí | 16 s | 
+| Sonora | Sí | 42 s | 
+| Visual | Sí | 42 s | 
 
 **Observaciones:**
 > Al establecer el límite inferior de SpO₂ en 90 % y simular 85 % con el OxSim, 
@@ -239,8 +239,8 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 | Tipo de alarma | ¿Se activó? | Tiempo desde configuración (s) | 
 |---|:---:|:---:|---|
-| Sonora | Sí | 14 s | 
-| Visual | Sí | 14 s | 
+| Sonora | Sí | 18 s | 
+| Visual | Sí | 18 s | 
 
 **Observaciones:**
 > Con el límite superior configurado en 97 % y el OxSim generando 99 %, el D30 
@@ -305,7 +305,7 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 | Límite superior FC configurado (bpm) | ¿Alarma de FC alta activa? | Tiempo de respuesta (s) |
 |:---:|:---:|:---:|
-| 100 bpm | Sí | 11 s |
+| 100 bpm | Sí | 21 s |
 
 **Observaciones de la onda PPG a 140 bpm:**
 > A 140 bpm la onda PPG mostró una reducción en la separación entre picos 
