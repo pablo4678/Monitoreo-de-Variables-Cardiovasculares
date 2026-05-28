@@ -315,7 +315,7 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 > clínicamente aceptable.
 > ___________________________________________________________________________
 ---
-## Analisís de resultados
+## Análisis de resultados
 ---
 ## Conclusiones
 ---
