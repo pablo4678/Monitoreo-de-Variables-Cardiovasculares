@@ -15,7 +15,7 @@
   - [Preguntas para la discusión](#preguntas-para-la-discusión)
 - [Procedimiento Experimental y Resultados](#procedimiento-experimental-y-resultados)
   - [Tabla de verificación de alarmas](#tabla-de-verificación-de-alarmas)
-  - [Punto 4 — Paciente bradicárdico (40 bpm, SpO₂ = 95%)](#punto-4--paciente-bradicárdico-40-bpm-spo₂--95)
+  - [Paciente bradicárdico (40 bpm, SpO₂ = 95%)](#paciente-bradicárdico-40-bpm-spo₂--95)
   - [Alarma límite inferior SpO₂ = 85%](#alarma-límite-inferior-spo₂--85)
   - [Alarma límite superior SpO₂ = 99%](#alarma-límite-superior-spo₂--99)
   - [Modo Low Perfusion](#modo-low-perfusion)
@@ -147,7 +147,7 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 ---
 
-### Punto 4 — Paciente bradicárdico (40 bpm, SpO₂ = 95%)
+### Paciente bradicárdico (40 bpm, SpO₂ = 95%)
 **Configuración del OxSim:** Modo 2 → SpO₂ = 95 %, FC = 40 bpm, PI ≈ 2.0 %
 <img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/d8d4cd9d-c4cd-4c25-8577-002bc2daeb46" />
 
