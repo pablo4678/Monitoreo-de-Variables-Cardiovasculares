@@ -181,6 +181,7 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 ### Punto 7 — Alarma límite inferior SpO₂ = 85%
 **Configuración:** Límite inferior de SpO₂ en D30 = 90 % | OxSim: SpO₂ = 85 %, FC = 80 bpm
+<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/ae14bba8-284a-40ed-8894-0ee03b8d020d" />
 
 | Tiempo [s] | FC simulada [bpm] | FC medida [bpm] | Error absoluto FC | Error % FC | SpO₂ simulada [%] | SpO₂ medida [%] | Error absoluto SpO₂ | Error % SpO₂ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -217,6 +218,7 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 ### Punto 9 — Alarma límite superior SpO₂ = 99%
 **Configuración:** Límite superior de SpO₂ en D30 = 97 % | OxSim: SpO₂ = 99 %, FC = 80 bpm
+<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/8e5c8c33-1ed0-41c2-ab4d-b728bb2d79af" />
 
 | Tiempo [s] | FC simulada [bpm] | FC medida [bpm] | Error absoluto FC | Error % FC | SpO₂ simulada [%] | SpO₂ medida [%] | Error absoluto SpO₂ | Error % SpO₂ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
