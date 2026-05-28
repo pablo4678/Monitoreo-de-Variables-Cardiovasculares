@@ -169,6 +169,11 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 | Desviación estándar | 0,00 | 0,00 % |
 
 **Observaciones de la onda fotopletismográfica:**
+> La onda PPG presentó morfología regular con picos bien definidos y separados, 
+> reflejando el bajo ritmo cardíaco de 40 bpm. La amplitud fue adecuada (PI ≈ 2 %), 
+> con ciclos claramente distinguibles y sin presencia de artefactos. La mayor 
+> separación entre pulsos respecto a la normocardia facilita la identificación 
+> individual de cada ciclo cardíaco en la pantalla del D30.
 > ___________________________________________________________________________
 
 ---
@@ -199,6 +204,12 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 | Visual | Sí | ___ s | ___________ |
 
 **Observaciones:**
+> Al establecer el límite inferior de SpO₂ en 90 % y simular 85 % con el OxSim, 
+> el monitor D30 activó la alarma sonora y visual de forma inmediata. La señal 
+> sonora fue intermitente de alta prioridad y la pantalla mostró el valor de SpO₂ 
+> parpadeando en color rojo, indicando condición crítica. El error de medición fue 
+> nulo, lo que confirma la correcta calibración del sensor en condiciones de 
+> hipoxemia moderada.
 > ___________________________________________________________________________
 
 ---
@@ -229,6 +240,11 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 | Visual | Sí | ___ s | ___________ |
 
 **Observaciones:**
+> Con el límite superior configurado en 97 % y el OxSim generando 99 %, el D30 
+> registró 100 % debido al sesgo sistemático de +1 % identificado en todas las 
+> mediciones de saturación alta. La alarma se activó correctamente al superar el 
+> umbral. El error porcentual de 1,01 % se mantiene dentro del rango de exactitud 
+> clínica (±2 %) establecido por la norma ISO 80601-2-61 para oxímetros de pulso.
 > ___________________________________________________________________________
 
 ---
@@ -245,6 +261,13 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 | Calidad de señal reportada por el D30 | ___________ |
 
 **Observaciones:**
+> En modo de baja perfusión (PI ≈ 0,2 %), el D30 mantuvo la lectura de SpO₂ de 
+> forma estable en 100 %, sin pérdida de señal ni mensajes de error. Sin embargo, 
+> la onda PPG mostró una reducción notable en su amplitud respecto a las condiciones 
+> de perfusión normal (PI ≈ 2 %), lo cual es consistente con la disminución del 
+> índice de perfusión. Este comportamiento indica que el algoritmo de procesamiento 
+> del D30 logra mantener la lectura en condiciones de perfusión reducida, aunque 
+> con menor confiabilidad de la señal fotopletismográfica.
 > ___________________________________________________________________________
 
 ---
@@ -279,6 +302,13 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 | ___ bpm | Sí / No | ___ s |
 
 **Observaciones de la onda PPG a 140 bpm:**
+> A 140 bpm la onda PPG mostró una reducción en la separación entre picos 
+> consecutivos respecto a la bradicardia (Punto 4), con ciclos más comprimidos 
+> en el eje temporal. La amplitud se mantuvo estable (PI ≈ 2 %), sin presencia 
+> de artefactos significativos. El error en SpO₂ fue variable (0 % en t = 10, 20, 
+> 50 s; 1,02 % en t = 30, 40 s), sugiriendo una leve inestabilidad del algoritmo 
+> de estimación ante frecuencias cardíacas elevadas, aunque dentro del margen 
+> clínicamente aceptable.
 > ___________________________________________________________________________
 
 ## Referencias
