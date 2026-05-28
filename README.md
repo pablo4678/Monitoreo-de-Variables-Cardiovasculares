@@ -321,8 +321,7 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 ---
 ## Referencias
 
-[1] Mindray Bio-Medical Electronics Co., Ltd., *BeneHeart D30/BeneHeart D20A/BeneHeart D20/BeneHeart D20C Defibrillator/Monitor Instructions for Use*, Rev. 1.0. Shenzhen, China: Mindray, Jun. 2022. [En línea]. Disponible en: https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/d6-cpr-sensor-mdr/H-046-024584-00-BeneHeart-D30-D20-Instructions-for-Use-1.0.pdf
-
+[1] Mindray Bio-Medical Electronics Co., Ltd., *BeneHeart D30/BeneHeart D20A/BeneHeart D20/BeneHeart D20C Defibrillator/Monitor Instructions for Use*, Rev. 1.0. Shenzhen, China: Mindray, Jun. 2022. [En línea]. Disponible en: [https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/d6-cpr-sensor-mdr/H-046-024584-00-BeneHeart-D30-D20-Instructions-for-Use-1.0.pdf]
 [2] Mindray Bio-Medical Electronics Co., Ltd., *BeneHeart D3/BeneHeart D2 Defibrillator/Monitor Service Manual*, Rev. 2.0. Shenzhen, China: Mindray. [En línea]. Disponible en: https://www.mindray.com/content/dam/xpace/en_gb/education/Service-Manuals/D3D2%20Service%20Manual_2.0_EN.pdf
 
 [3] Pronk Technologies, "OX-1 OxSim® Optical SpO2 Pulse Oximeter Simulator," Product page. [En línea]. Disponible en: https://www.pronktech.com/product/ox-1-oxsim-miniaturized-optical-spo2-pulse-oximeter-tester/
