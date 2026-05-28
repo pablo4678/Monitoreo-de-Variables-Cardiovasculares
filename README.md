@@ -199,10 +199,12 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 **Registro de alarma:**
 
-| Tipo de alarma | ¿Se activó? | Tiempo desde configuración (s) | 
-|---|:---:|:---:|---|
-| Sonora | Sí | 42 s | 
-| Visual | Sí | 42 s | 
+
+| Tipo de alarma | ¿Se activó? | Tiempo desde configuración (s) |
+| :--- | :---: | :---: |
+| Sonora | Sí | 42 s |
+| Visual | Sí | 42 s |
+
 
 **Observaciones:**
 > Al establecer el límite inferior de SpO₂ en 90 % y simular 85 % con el OxSim, 
