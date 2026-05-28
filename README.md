@@ -261,7 +261,7 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 | ¿El D30 mantiene la lectura de SpO₂? | Sí / No / Intermitente |
 | ¿La onda PPG se distorsiona o desaparece? | Sí / No / Parcialmente |
 | Valor de SpO₂ mostrado (si aplica) | 100 % |
-| Calidad de señal reportada por el D30 | ___________ |
+
 
 **Observaciones:**
 > En modo de baja perfusión (PI ≈ 0,2 %), el D30 mantuvo la lectura de SpO₂ de 
@@ -304,7 +304,7 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 | Límite superior FC configurado (bpm) | ¿Alarma de FC alta activa? | Tiempo de respuesta (s) |
 |:---:|:---:|:---:|
-| ___ bpm | Sí / No | ___ s |
+| 100 bpm | Sí | 11 s |
 
 **Observaciones de la onda PPG a 140 bpm:**
 > A 140 bpm la onda PPG mostró una reducción en la separación entre picos 
