@@ -140,25 +140,23 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 ---
 
 ### Tabla de verificación de alarmas
-
 *(Puntos 6, 7, 8, 9 y 11 del procedimiento)*
 
 | # | Parámetro | Límite configurado | Tipo (Alto / Bajo) | Valor simulado (OxSim) | Valor mostrado en D30 | ¿Alarma activa? | Tiempo de respuesta (s) |
 |:---:|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | SpO₂ | 90 % | Bajo | 85 % | ___ % | Sí / No | ___ s |
-| 2 | SpO₂ | 97 % | Alto | 99 % | ___ % | Sí / No | ___ s |
+| 1 | SpO₂ | 90 % | Bajo | 85 % | 85 % | Sí | ___ s |
+| 2 | SpO₂ | 97 % | Alto | 99 % | 100 % | Sí | ___ s |
 | 3 | FC | ___ bpm | Alto | 150 bpm | ___ bpm | Sí / No | ___ s |
 
 ---
 
 ### Punto 4 — Paciente bradicárdico (40 bpm, SpO₂ = 95%)
-
 **Configuración del OxSim:** Modo 2 → SpO₂ = 95 %, FC = 40 bpm, PI ≈ 2.0 %
 
 | Variable | Valor simulado (OxSim) | Valor mostrado (D30) | Error absoluto | Error porcentual |
 |---|:---:|:---:|:---:|:---:|
-| SpO₂ | 95 % | ___ % | \|95 − ___\| = ___ % | (___ / 95) × 100 = ___ % |
-| FC | 40 bpm | ___ bpm | \|40 − ___\| = ___ bpm | (___ / 40) × 100 = ___ % |
+| SpO₂ | 95 % | 96 % | \|95 − 96\| = 1 % | (1 / 95) × 100 = 1,05 % |
+| FC | 40 bpm | 40 bpm | \|40 − 40\| = 0 bpm | (0 / 40) × 100 = 0 % |
 
 **Fórmulas aplicadas:**
 
@@ -167,7 +165,6 @@ $$E_{absoluto} = |V_{simulado} - V_{medido}|$$
 $$E_{porcentual} = \frac{E_{absoluto}}{V_{simulado}} \times 100\%$$
 
 **Observaciones de la onda fotopletismográfica:**
-
 > *(Describa la morfología de la onda PPG observada en la pantalla del D30: amplitud, regularidad, presencia de artefactos, etc.)*
 >
 > ___________________________________________________________________________
@@ -175,49 +172,42 @@ $$E_{porcentual} = \frac{E_{absoluto}}{V_{simulado}} \times 100\%$$
 ---
 
 ### Punto 7 — Alarma límite inferior SpO₂ = 85%
-
-**Configuración:** Límite inferior de SpO₂ en D30 = 90 % | OxSim: SpO₂ = 85 %, FC = 60 bpm
+**Configuración:** Límite inferior de SpO₂ en D30 = 90 % | OxSim: SpO₂ = 85 %, FC = 80 bpm
 
 | Variable | Valor simulado (OxSim) | Valor mostrado (D30) | Error absoluto | Error porcentual |
 |---|:---:|:---:|:---:|:---:|
-| SpO₂ | 85 % | ___ % | ___ % | ___ % |
-| FC | 60 bpm | ___ bpm | ___ bpm | ___ % |
+| SpO₂ | 85 % | 85 % | 0 % | 0 % |
+| FC | 80 bpm | 80 bpm | 0 bpm | 0 % |
 
 **Registro de alarma:**
 
 | Tipo de alarma | ¿Se activó? | Tiempo desde configuración (s) | Descripción visual/sonora |
 |---|:---:|:---:|---|
-| Sonora | Sí / No | ___ s | ___________ |
-| Visual | Sí / No | ___ s | ___________ |
+| Sonora | Sí | ___ s | ___________ |
+| Visual | Sí | ___ s | ___________ |
 
 **Observaciones:**
-
 > ___________________________________________________________________________
 
 ---
 
 ### Punto 9 — Alarma límite superior SpO₂ = 99%
-
-**Configuración:** Límite superior de SpO₂ en D30 = 97 % | OxSim: SpO₂ = 99 %
+**Configuración:** Límite superior de SpO₂ en D30 = 97 % | OxSim: SpO₂ = 99 %, FC = 80 bpm
 
 | Variable | Valor simulado (OxSim) | Valor mostrado (D30) | Error absoluto | Error porcentual |
 |---|:---:|:---:|:---:|:---:|
-| SpO₂ | 99 % | ___ % | ___ % | ___ % |
-| FC | ___ bpm | ___ bpm | ___ bpm | ___ % |
+| SpO₂ | 99 % | 100 % | 1 % | (1 / 99) × 100 = 1,01 % |
+| FC | 80 bpm | 80 bpm | 0 bpm | 0 % |
 
 **Registro de alarma:**
 
 | Tipo de alarma | ¿Se activó? | Tiempo desde configuración (s) | Descripción visual/sonora |
 |---|:---:|:---:|---|
-| Sonora | Sí / No | ___ s | ___________ |
-| Visual | Sí / No | ___ s | ___________ |
+| Sonora | Sí | ___ s | ___________ |
+| Visual | Sí | ___ s | ___________ |
 
 **Observaciones:**
-
 > ___________________________________________________________________________
-
----
-
 ### Punto 10 — Modo Low Perfusion
 
 **Configuración del OxSim:** Modo Low Perfusion → SpO₂ = 99 %, FC = 80 bpm, PI ≈ 0.2 %
