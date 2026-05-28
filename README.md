@@ -146,27 +146,29 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 |:---:|---|:---:|:---:|:---:|:---:|:---:|:---:|
 | 1 | SpO₂ | 90 % | Bajo | 85 % | 85 % | Sí | ___ s |
 | 2 | SpO₂ | 97 % | Alto | 99 % | 100 % | Sí | ___ s |
-| 3 | FC | ___ bpm | Alto | 150 bpm | ___ bpm | Sí / No | ___ s |
+| 3 | FC | ___ bpm | Alto | 140 bpm | 140 bpm | Sí / No | ___ s |
 
 ---
 
 ### Punto 4 — Paciente bradicárdico (40 bpm, SpO₂ = 95%)
 **Configuración del OxSim:** Modo 2 → SpO₂ = 95 %, FC = 40 bpm, PI ≈ 2.0 %
 
-| Variable | Valor simulado (OxSim) | Valor mostrado (D30) | Error absoluto | Error porcentual |
-|---|:---:|:---:|:---:|:---:|
-| SpO₂ | 95 % | 96 % | \|95 − 96\| = 1 % | (1 / 95) × 100 = 1,05 % |
-| FC | 40 bpm | 40 bpm | \|40 − 40\| = 0 bpm | (0 / 40) × 100 = 0 % |
+| Tiempo [s] | FC simulada [bpm] | FC medida [bpm] | Error absoluto FC | Error % FC | SpO₂ simulada [%] | SpO₂ medida [%] | Error absoluto SpO₂ | Error % SpO₂ |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 10 | 40 | 40 | 0 | 0 % | 95 | 96 | 1 | 1,05 % |
+| 20 | 40 | 40 | 0 | 0 % | 95 | 96 | 1 | 1,05 % |
+| 30 | 40 | 40 | 0 | 0 % | 95 | 96 | 1 | 1,05 % |
+| 40 | 40 | 40 | 0 | 0 % | 95 | 96 | 1 | 1,05 % |
+| 50 | 40 | 40 | 0 | 0 % | 95 | 96 | 1 | 1,05 % |
 
-**Fórmulas aplicadas:**
-
-$$E_{absoluto} = |V_{simulado} - V_{medido}|$$
-
-$$E_{porcentual} = \frac{E_{absoluto}}{V_{simulado}} \times 100\%$$
+| Métrica | FC | SpO₂ |
+|---|:---:|:---:|
+| MAE | 0 bpm | 1,00 % |
+| MPE | 0,00 % | 1,05 % |
+| Error máximo | 0 bpm | 1 % |
+| Desviación estándar | 0,00 | 0,00 % |
 
 **Observaciones de la onda fotopletismográfica:**
-> *(Describa la morfología de la onda PPG observada en la pantalla del D30: amplitud, regularidad, presencia de artefactos, etc.)*
->
 > ___________________________________________________________________________
 
 ---
@@ -174,10 +176,20 @@ $$E_{porcentual} = \frac{E_{absoluto}}{V_{simulado}} \times 100\%$$
 ### Punto 7 — Alarma límite inferior SpO₂ = 85%
 **Configuración:** Límite inferior de SpO₂ en D30 = 90 % | OxSim: SpO₂ = 85 %, FC = 80 bpm
 
-| Variable | Valor simulado (OxSim) | Valor mostrado (D30) | Error absoluto | Error porcentual |
-|---|:---:|:---:|:---:|:---:|
-| SpO₂ | 85 % | 85 % | 0 % | 0 % |
-| FC | 80 bpm | 80 bpm | 0 bpm | 0 % |
+| Tiempo [s] | FC simulada [bpm] | FC medida [bpm] | Error absoluto FC | Error % FC | SpO₂ simulada [%] | SpO₂ medida [%] | Error absoluto SpO₂ | Error % SpO₂ |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 10 | 80 | 80 | 0 | 0 % | 85 | 85 | 0 | 0 % |
+| 20 | 80 | 80 | 0 | 0 % | 85 | 85 | 0 | 0 % |
+| 30 | 80 | 80 | 0 | 0 % | 85 | 85 | 0 | 0 % |
+| 40 | 80 | 80 | 0 | 0 % | 85 | 85 | 0 | 0 % |
+| 50 | 80 | 80 | 0 | 0 % | 85 | 85 | 0 | 0 % |
+
+| Métrica | FC | SpO₂ |
+|---|:---:|:---:|
+| MAE | 0 bpm | 0,00 % |
+| MPE | 0,00 % | 0,00 % |
+| Error máximo | 0 bpm | 0 % |
+| Desviación estándar | 0,00 | 0,00 % |
 
 **Registro de alarma:**
 
@@ -194,10 +206,20 @@ $$E_{porcentual} = \frac{E_{absoluto}}{V_{simulado}} \times 100\%$$
 ### Punto 9 — Alarma límite superior SpO₂ = 99%
 **Configuración:** Límite superior de SpO₂ en D30 = 97 % | OxSim: SpO₂ = 99 %, FC = 80 bpm
 
-| Variable | Valor simulado (OxSim) | Valor mostrado (D30) | Error absoluto | Error porcentual |
-|---|:---:|:---:|:---:|:---:|
-| SpO₂ | 99 % | 100 % | 1 % | (1 / 99) × 100 = 1,01 % |
-| FC | 80 bpm | 80 bpm | 0 bpm | 0 % |
+| Tiempo [s] | FC simulada [bpm] | FC medida [bpm] | Error absoluto FC | Error % FC | SpO₂ simulada [%] | SpO₂ medida [%] | Error absoluto SpO₂ | Error % SpO₂ |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 10 | 80 | 80 | 0 | 0 % | 99 | 100 | 1 | 1,01 % |
+| 20 | 80 | 80 | 0 | 0 % | 99 | 100 | 1 | 1,01 % |
+| 30 | 80 | 80 | 0 | 0 % | 99 | 100 | 1 | 1,01 % |
+| 40 | 80 | 80 | 0 | 0 % | 99 | 100 | 1 | 1,01 % |
+| 50 | 80 | 80 | 0 | 0 % | 99 | 100 | 1 | 1,01 % |
+
+| Métrica | FC | SpO₂ |
+|---|:---:|:---:|
+| MAE | 0 bpm | 1,00 % |
+| MPE | 0,00 % | 1,01 % |
+| Error máximo | 0 bpm | 1 % |
+| Desviación estándar | 0,00 | 0,00 % |
 
 **Registro de alarma:**
 
@@ -208,6 +230,9 @@ $$E_{porcentual} = \frac{E_{absoluto}}{V_{simulado}} \times 100\%$$
 
 **Observaciones:**
 > ___________________________________________________________________________
+
+---
+
 ### Punto 10 — Modo Low Perfusion
 
 **Configuración del OxSim:** Modo Low Perfusion → SpO₂ = 99 %, FC = 80 bpm, PI ≈ 0.2 %
@@ -216,25 +241,36 @@ $$E_{porcentual} = \frac{E_{absoluto}}{V_{simulado}} \times 100\%$$
 |---|---|
 | ¿El D30 mantiene la lectura de SpO₂? | Sí / No / Intermitente |
 | ¿La onda PPG se distorsiona o desaparece? | Sí / No / Parcialmente |
-| Valor de SpO₂ mostrado (si aplica) | ___ % |
+| Valor de SpO₂ mostrado (si aplica) | 100 % |
 | Calidad de señal reportada por el D30 | ___________ |
 
 **Observaciones:**
-
-> *(Describa el comportamiento de la onda fotopletismográfica: amplitud, distorsión, pérdida de señal, mensajes de error del monitor, etc.)*
->
 > ___________________________________________________________________________
 
 ---
 
-### Punto 11 — Taquicardia (150 bpm, SpO₂ = 95%)
+### Punto 11 — Taquicardia (140 bpm, SpO₂ = 98%)
 
-**Configuración del OxSim:** SpO₂ = 95 %, FC = 150 bpm, PI ≈ 2.0 %
+> ⚠️ El procedimiento indica 150 bpm; el OxSim fue configurado a 140 bpm durante la práctica.
 
-| Variable | Valor simulado (OxSim) | Valor mostrado (D30) | Error absoluto | Error porcentual |
-|---|:---:|:---:|:---:|:---:|
-| SpO₂ | 95 % | ___ % | ___ % | ___ % |
-| FC | 150 bpm | ___ bpm | ___ bpm | ___ % |
+**Configuración del OxSim:** SpO₂ = 98 %, FC = 140 bpm, PI ≈ 2.0 %
+
+| Tiempo [s] | FC simulada [bpm] | FC medida [bpm] | Error absoluto FC | Error % FC | SpO₂ simulada [%] | SpO₂ medida [%] | Error absoluto SpO₂ | Error % SpO₂ |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 10 | 140 | 140 | 0 | 0 % | 98 | 98 | 0 | 0 % |
+| 20 | 140 | 140 | 0 | 0 % | 98 | 98 | 0 | 0 % |
+| 30 | 140 | 140 | 0 | 0 % | 98 | 99 | 1 | 1,02 % |
+| 40 | 140 | 140 | 0 | 0 % | 98 | 99 | 1 | 1,02 % |
+| 50 | 140 | 140 | 0 | 0 % | 98 | 98 | 0 | 0 % |
+
+| Métrica | FC | SpO₂ |
+|---|:---:|:---:|
+| MAE | 0 bpm | 0,40 % |
+| MPE | 0,00 % | 0,41 % |
+| Error máximo | 0 bpm | 1 % |
+| Desviación estándar | 0,00 | 0,49 % |
+
+> σ SpO₂: errores = {0, 0, 1, 1, 0} → media = 0,4 → σ = √(1,2/5) ≈ 0,49 %
 
 **Registro de alarma de FC elevada:**
 
@@ -242,13 +278,8 @@ $$E_{porcentual} = \frac{E_{absoluto}}{V_{simulado}} \times 100\%$$
 |:---:|:---:|:---:|
 | ___ bpm | Sí / No | ___ s |
 
-**Observaciones de la onda PPG a 150 bpm:**
-
-> *(Describa los cambios en la morfología de la onda plestimográfica respecto al punto 4: separación entre picos, amplitud, artefactos, etc.)*
->
+**Observaciones de la onda PPG a 140 bpm:**
 > ___________________________________________________________________________
-
----
 
 ## Referencias
 
