@@ -152,6 +152,7 @@ El resultado clínico es que el monitor puede disparar una alarma de hipoxemia c
 
 ### Punto 4 — Paciente bradicárdico (40 bpm, SpO₂ = 95%)
 **Configuración del OxSim:** Modo 2 → SpO₂ = 95 %, FC = 40 bpm, PI ≈ 2.0 %
+<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/d8d4cd9d-c4cd-4c25-8577-002bc2daeb46" />
 
 | Tiempo [s] | FC simulada [bpm] | FC medida [bpm] | Error absoluto FC | Error % FC | SpO₂ simulada [%] | SpO₂ medida [%] | Error absoluto SpO₂ | Error % SpO₂ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
